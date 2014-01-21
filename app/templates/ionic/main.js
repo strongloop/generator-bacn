@@ -21,13 +21,18 @@ angular.module('<%= appname %>', ['ionic'])
       navigator.geolocation.getCurrentPosition(function (pos) {
         $rootScope.$apply(function () {
           console.log('Got: %s, %s', pos.coords.latitude, pos.coords.longitude);
-          deferred.resolve(pos.coords);
+          deferred.resolve(angular.copy(pos.coords));
         });
       }, function (err) {
         $rootScope.$apply(function () {
           console.log('Got error: %s', err.stack || err.message || err);
           deferred.reject(err);
         });
+      });
+
+      angular.extend(deferred.promise, {
+        latitude: 0,
+        longitude: 0
       });
 
       return deferred.promise;
