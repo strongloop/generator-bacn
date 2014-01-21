@@ -2,24 +2,24 @@
   "name": "generator-bacn",
   "version": "0.0.0",
   "description": "A generator for Yeoman",
-  "keywords": [
-    "yeoman-generator"
-  ],
-  "homepage": "https://github.com/Schoonology/generator-bacn",
-  "bugs": "https://github.com/Schoonology/generator-bacn/issues",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strongloop/generator-bacn.git"
+  },
+  "homepage": "https://github.com/strongloop/generator-bacn",
+  "bugs": "https://github.com/strongloop/generator-bacn/issues",
   "author": {
     "name": "Michael Schoonmaker",
     "email": "michael.r.schoonmaker@gmail.com",
     "url": "https://github.com/Schoonology"
   },
-  "main": "app/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Schoonology/generator-bacn.git"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
+  "keywords": [
+    "yeoman-generator"
+  ],
   "dependencies": {
     "yeoman-generator": "~0.14.0"
   },
@@ -33,9 +33,5 @@
     "node": ">=0.8.0",
     "npm": ">=1.2.10"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ]
+  "license": "MIT"
 }
