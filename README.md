@@ -35,6 +35,12 @@ Finally, initiate the generator:
 $ yo bacn
 ```
 
+_NOTE: Unlike a lot of generators, Yeoman generates all files within the current working directory._ To create the new BACN project within a folder instead, it'll have to be created manually. For example:
+
+```
+mkdir bacn; cd $_; yo bacn
+```
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
