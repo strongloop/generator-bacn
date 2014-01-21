@@ -1,0 +1,15 @@
+{
+  "name": "<%= appname %>",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.2.5",
+    "angular-animate": "~1.2.5",
+    "angular-resource": "~1.2.5",
+    "angular-route": "~1.2.5",
+    "angular-sanitize": "~1.2.5",
+    "angular-touch": "~1.2.5",
+    "angular-ui-router": "0.2.7",
+    "ionic": "~0.9.17",
+    "ionicons": "~1.4.0"
+  }
+}
