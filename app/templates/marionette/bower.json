@@ -1,0 +1,9 @@
+{
+  "name": "<%= appname %>",
+  "version": "0.0.0",
+  "dependencies": {
+    "marionette": "~1.2.2",
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.2"
+  }
+}
