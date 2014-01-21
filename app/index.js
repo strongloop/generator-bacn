@@ -77,6 +77,10 @@ BacnGenerator.prototype.renderSharedFiles = function renderSharedFiles() {
   self.copy('.editorconfig', '.editorconfig');
   self.copy('.jshintrc', '.jshintrc');
 
+  self.sourceRoot(path.join(__dirname, 'templates'));
+  self.template('package.json', 'package.json');
+  self.template('Gruntfile.js', 'Gruntfile.js');
+
   return self;
 };
 
@@ -87,7 +91,6 @@ BacnGenerator.prototype.renderTemplateFiles = function renderTemplateFiles() {
   var self = this;
 
   self.sourceRoot(path.join(__dirname, 'templates', self.options.template));
-  self.template('package.json', 'package.json');
   self.template('bower.json', 'bower.json');
   self.template('index.html', 'index.html');
   self.template('main.css', 'css/main.css');
