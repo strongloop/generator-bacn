@@ -78,6 +78,7 @@ BacnGenerator.prototype.renderSharedFiles = function renderSharedFiles() {
   self.copy('.jshintrc', '.jshintrc');
 
   self.sourceRoot(path.join(__dirname, 'templates'));
+  self.copy('gitignore', '.gitignore');
   self.template('package.json', 'package.json');
   self.template('Gruntfile.js', 'Gruntfile.js');
 
