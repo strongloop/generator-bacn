@@ -7,6 +7,11 @@ module.exports = function (grunt) {
     connect: {
       livereload: true
     },
+    open: {
+      local: {
+        path: 'http://mobiletest.me/#u=http://localhost:8000'
+      }
+    },
     watch: {}
   });
 
